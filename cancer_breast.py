@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from matplotlib import pyplot as plt
 
 my_data = pd.read_csv("C:\\Users\\Konny\\Downloads\\archive (2)\\breast-cancer.csv")
