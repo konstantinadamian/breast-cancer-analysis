@@ -45,6 +45,7 @@ plt.plot(reshape_x, y_pred, color='r', label="Linear Fit")
 plt.xlabel("Radius Mean")
 plt.ylabel("Area Mean")
 plt.legend()
+plt.grid(True, color='lavender')
 plt.show()
 
 
