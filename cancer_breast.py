@@ -1,6 +1,6 @@
 import pandas as pd
 from matplotlib import pyplot as plt
-from scipy.stats import pearsonr
+from scipy.stats import spearmanr
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 import numpy as np
@@ -22,8 +22,8 @@ print(filtered_data)
 x = data['radius_mean']
 y = data['area_mean']
 
-pearson_corr, _ = pearsonr(x,y)
-print(f"Pearson Correlation: {pearson_corr}")
+spearmanr_corr, _ = spearmanr(x,y)
+print(f"Spearmanr Correlation: {spearmanr_corr}")
 
 plt.scatter(x, y, alpha=0.9,marker='.',color='r',linewidths=0.1,edgecolors='b')
 plt.xlabel('Radius Mean')
